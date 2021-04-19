@@ -1,5 +1,4 @@
 import prompt
-import brain_games
 
 
 def welcome_user():
@@ -9,4 +8,3 @@ def welcome_user():
 
 if __name__ == "__main__":
     welcome_user()
-
