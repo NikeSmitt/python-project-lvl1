@@ -15,11 +15,12 @@ def even_game():
     value = random.randint(BOTTOM, TOP)
     print(f"Question: {value}")
     user_answer = prompt.string("Your answer: ")
-    return user_answer, value
+    right_answer = is_even(value)
+    return user_answer, right_answer
 
 
 def main():
-    brain_games.game_loop.main(WELCOME_MESSAGE, even_game, is_even)
+    brain_games.game_loop.main(WELCOME_MESSAGE, even_game)
 
 
 if __name__ == "__main__":

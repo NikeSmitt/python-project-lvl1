@@ -14,14 +14,13 @@ def get_message(message, name):
     return f"{message}, {name}!"
 
 
-def main(welcome_message=None, game=None, check_answer=None):
+def main(welcome_message=None, game=None):
     name = prompt.string("May I have your name? ").capitalize()
     print(f"Hello, {name}!")
     print(welcome_message)
     message = "Congratulations"
     for _ in range(GAME_ATTEMPTS):
-        user_answer, value = game()
-        right_answer = check_answer(value)
+        user_answer, right_answer = game()
         if user_answer == right_answer:
             print("Correct!")
         else:
