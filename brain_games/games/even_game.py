@@ -2,8 +2,9 @@ import random
 import prompt
 import brain_games.game_loop
 
-WELCOME_MESSAGE = "Answer \"yes\" if the number is even,"\
-        " otherwise answer \"no\"."
+WELCOME_MESSAGE = 'Answer "yes" if the number is even, ' \
+                  'otherwise answer "no".'
+
 TOP = 100
 BOTTOM = 1
 
@@ -26,4 +27,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
