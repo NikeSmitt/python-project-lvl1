@@ -4,4 +4,6 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - run: pip install poetry
       - run: make lint
