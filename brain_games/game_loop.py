@@ -14,12 +14,19 @@ def get_message(message, name):
 
 
 def main(welcome_message=None, game=None):
+    # Greetings
     name = prompt.string("May I have your name? ").capitalize()
     print(f"Hello, {name}!")
     print(welcome_message)
+
+    # costumes final message
     message = "Congratulations"
     for _ in range(GAME_ATTEMPTS):
-        user_answer, right_answer = game()
+
+        question, right_answer = game()
+        print(f"Question: {question}")
+
+        user_answer = prompt.string("Your answer: ")
         if user_answer == right_answer:
             print("Correct!")
         else:

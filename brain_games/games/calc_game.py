@@ -1,5 +1,4 @@
 import random
-import prompt
 import brain_games.game_loop
 
 GAME_MESSAGE = "What is the result of the expression?"
@@ -24,9 +23,7 @@ def calc_game():
     b = random.randint(BOTTOM, a)
     operation = random.choice([add_, sub_, mult_])
     result, question = operation(a, b)
-    print(f"Question: {question}")
-    user_answer = prompt.string("Your answer: ")
-    return user_answer, str(result)
+    return question, str(result)
 
 
 def main():
