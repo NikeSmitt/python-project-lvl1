@@ -4,7 +4,6 @@ import brain_games.scripts.brain_games
 
 
 def main():
-    print("Welcome to the Brain Games!")
     brain_games.games.even_game.main()
 
 

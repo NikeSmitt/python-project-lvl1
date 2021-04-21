@@ -15,6 +15,7 @@ def get_message(message, name):
 
 def main(welcome_message=None, game=None):
     # Greetings
+    print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ").capitalize()
     print(f"Hello, {name}!")
     print(welcome_message)

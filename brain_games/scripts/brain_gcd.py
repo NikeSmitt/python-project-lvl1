@@ -3,7 +3,6 @@ import brain_games.games.gcd_game
 
 
 def main():
-    print("Welcome to the Brain Games!")
     brain_games.games.gcd_game.main()
 
 
